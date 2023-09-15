@@ -6,12 +6,10 @@ app = Flask(__name__)
 
 @app.route("/calculator/greeting", methods=['GET'])
 def greeting():
-    return ''
     return 'Hello world!'
 
 @app.route("/calculator/add", methods=['POST'])
 def add():
-    return ''
     numbers = request.get_json()
     a= numbers["first"]
     b= numbers["second"]
@@ -20,7 +18,6 @@ def add():
 
 @app.route("/calculator/subtract", methods=['POST'])
 def subtract():
-    return ''
     numbers = request.get_json()
     a= numbers["first"]
     b= numbers["second"]
